@@ -52,7 +52,3 @@ transition: 0.3s;
 .banner-info, .banner-image{
     margin: 50px 0;
 }
-.about {
-    height: 500px;
-    background-color:rgb(10, 10, 10);
-}
