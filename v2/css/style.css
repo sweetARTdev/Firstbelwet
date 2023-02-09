@@ -1,0 +1,25 @@
+.primarycolor{
+    color: #87ceeb;
+}
+.primarycolorbg{
+    background-color: #87ceeb;
+}
+.secondarycolor{
+    color: #000080;
+}
+.secondarycolorbg{
+    background-color: #000080;
+}
+@media screen and (max-width:400px){
+    .carousel-captions {
+        position: absolute !important;
+        right: 15% !important;
+        bottom: 0 !important;
+        left: 15% !important;
+        padding-top: 0 !important;
+        padding-bottom: 1.25rem !important;
+        color: #0000 !important;
+        text-align: center;
+        border: red solid 1px;
+    }
+}
