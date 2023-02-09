@@ -6,6 +6,12 @@
     background-color: #87ceeb;
 }
 
+.btn-primarycolorbg {
+    background-color: #00003d !important;
+    color: #ffffff !important;
+}
+
+
 .secondarycolor {
     color: #00003d;
 }
