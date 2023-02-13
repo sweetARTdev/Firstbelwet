@@ -38,60 +38,92 @@
                         <div class="card shadow-lg">
                             <div class="row gx-0">
                                 <div class="col-lg-6 image-wrapper bg-image bg-cover rounded-top rounded-lg-start d-none d-md-block"
-                                    data-image-src="src/img/photos/tm1.jpg">
+                                    data-image-src="img/Services.avif">
                                 </div>
                                 <!--/column -->
                                 <div class="col-lg-6">
                                     <div class="p-10 p-md-11 p-lg-13">
-                                        <h2 class="display-4 mb-3">Let’s Talk</h2>
-                                        <p class="lead fs-lg">Let's make something great together. We are trusted by
-                                            over 5000+ clients. Join them by using our services and grow your business.
+                                        <h2 class="display-4 mb-3">Our Principles</h2>
+                                        <p><span class="lead fs-md bold"><strong>Enlighten:</strong> </span>
+                                            We provide updated and valuable
+                                            information on mental health, psychological
+                                            well-being, and how to overcome your weaknesses and maximize your strength.
                                         </p>
-                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-                                            vestibulum. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac
-                                            cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                                            amet risus.</p>
-                                        <a href="#" class="btn btn-primary rounded-pill mt-2">Join Us</a>
+                                        <p><span class="lead fs-md bold"><strong>Communicate:</strong> </span>
+                                            Without honest communication we can not know your request nor can we proffer
+                                            the right and long-lasting solutions. We understand the importance of verbal
+                                            (7%), tone (38%) and body language (55%).
+                                        </p>
+                                        <p><span class="lead fs-md bold"><strong>Connect:</strong> </span>
+                                            We connect you to a verified specialist based on your unique profile and
+                                            request.
+                                        </p>
+                                        <p><span class="lead fs-md bold"><strong>Explore:</strong> </span>
+                                            We explore by researching various mental health topics as it concerns
+                                            different races, cultures and age groups.
+                                        </p>
                                     </div>
-                                    <!--/div -->
                                 </div>
-                                <!--/column -->
                             </div>
-                            <!--/.row -->
                         </div>
-                        <!-- /.card -->
                     </div>
-                    <!-- /column -->
                 </div>
+
+                <div class="pb-7 pb-md-8">
+                    <div class="container">
+                        <p class=" mx-12 mx-md-14"> Temporarily, physical services are provided only in Kaduna. There
+                            is
+                            a provision for
+                            physical
+                            services in other locations to clients who make a request and also meet the terms and
+                            conditions.
+                        </p>
+                        <p class=" mx-12 mx-md-14">Got questions, comments, or feedback? And If you are trying to
+                            schedule an appointment you
+                            can do
+                            so by directly browsing through our service list. But if you don’t find what you are looking
+                            for, you can tell us by filling out the contact form. We are here for you.
+                        </p>
+                    </div>
+                </div>
+
                 <!-- /.row -->
                 <div class="row">
                     <div class="col-xl-10 mx-auto">
                         <div class="row gy-10 gx-lg-8 gx-xl-12">
                             <div class="col-lg-8">
-                                <form class="contact-form" method="post" action="src/php/contact.php">
+                                <form class="contact-form" method="post" action="">
                                     <div class="messages"></div>
                                     <div class="controls">
                                         <div class="row gx-4">
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
                                                     <input id="form_name" type="text" name="name" class="form-control"
-                                                        placeholder="Jane" required="required"
-                                                        data-error="First Name is required.">
-                                                    <label for="form_name">First Name *</label>
-                                                    <div class="help-block with-errors"></div>
+                                                        placeholder="Full name" required="required">
+                                                    <label for="form_name">Name *</label>
                                                 </div>
                                             </div>
-                                            <!-- /column -->
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
-                                                    <input id="form_lastname" type="text" name="surname"
-                                                        class="form-control" placeholder="Doe" required="required"
-                                                        data-error="Last Name is required.">
-                                                    <label for="form_lastname">Last Name *</label>
-                                                    <div class="help-block with-errors"></div>
+                                                    <input id="gender" type="text" name="gender" class="form-control"
+                                                        placeholder="Gender" required="required">
+                                                    <label for="gender">Gender*</label>
                                                 </div>
                                             </div>
-                                            <!-- /column -->
+                                            <div class="col-md-6">
+                                                <div class="form-label-group mb-4">
+                                                    <input id="email" type="text" name="email" class="form-control"
+                                                        placeholder="Email" required="required">
+                                                    <label for="email">Email*</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-label-group mb-4">
+                                                    <input id="phone" type="text" name="phone" class="form-control"
+                                                        placeholder="Phone number" required="required">
+                                                    <label for="phone">Phone Number*</label>
+                                                </div>
+                                            </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
                                                     <input id="form_email" type="email" name="email"
@@ -101,7 +133,6 @@
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
-                                            <!-- /column -->
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
                                                     <input id="form_phone" type="tel" name="phone" class="form-control"
@@ -136,7 +167,7 @@
                             </div>
                             <!--/column -->
                             <div class="col-lg-4">
-                                <div class="d-flex flex-row">
+                                <!-- <div class="d-flex flex-row">
                                     <div>
                                         <div class="icon text-primary fs-28 me-4 mt-n1"> <i
                                                 class="uil uil-location-pin-alt"></i> </div>
@@ -145,7 +176,7 @@
                                         <h5 class="mb-1">Address</h5>
                                         <address>Moonshine St. 14/05 Light City, London, United Kingdom</address>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="d-flex flex-row">
                                     <div>
                                         <div class="icon text-primary fs-28 me-4 mt-n1"> <i
@@ -153,9 +184,12 @@
                                     </div>
                                     <div>
                                         <h5 class="mb-1">Phone</h5>
-                                        <p>00 (123) 456 78 90 <br class="d-none d-md-block" />00 (987) 654 32 10</p>
+                                        <p>+234 815 730 2663 (WhatsApp only)
+                                            <br class="d-none d-md-block" /> +234 701 573 6171(Calls only)
+                                        </p>
                                     </div>
                                 </div>
+
                                 <div class="d-flex flex-row">
                                     <div>
                                         <div class="icon text-primary fs-28 me-4 mt-n1"> <i
@@ -163,9 +197,22 @@
                                     </div>
                                     <div>
                                         <h5 class="mb-1">E-mail</h5>
-                                        <p class="mb-0"><a href="mailto:sandbox@email.com"
-                                                class="link-body">sandbox@email.com</a></p>
-                                        <p><a href="mailto:help@sandbox.com" class="link-body">help@sandbox.com</a></p>
+                                        <p class=""><a href="mailto:belwetmindclinic@gmail.com"
+                                                class="link-body">belwetmindclinic@gmail.com</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row">
+                                    <div>
+                                        <div class="icon text-primary fs-28 me-4 mt-n1">
+                                            <i class="uil uil-clock"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Working Hours</h5>
+                                        <p>Monday to Friday – 11:00 am to 10:00 pm <br>
+                                            Saturday to Sunday – Emergencies only with an extra fee of N5000.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -183,85 +230,8 @@
 
 
 
-        <!-- Mission and vission starts  here  -->
-        <section class="wrapper bg-light">
-            <div class="container py-5 py-md-5">
-                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-top">
-                    <h2 class="fs-15 text-uppercase text-line text-primary text-center mb-1">Our Mission & Vision</h2>
-                    <div class="col-lg-6">
-                        <h3 class="display-5">Mission</h3>
-                        <p>A growing organization aimed at bringing effective and
-                            outstanding quality services for people of all ages and cultures
-                            to manage and live above life stresses and mental health
-                            challenges. As they maximize their potential for complete
-                            well-being and not just the absence of a challenge or
-                            psychological disorder.
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <h3 class="display-5">Vision</h3>
-                        <p>To be the most preferred clinic for convenient
-                            mental health advocacy, training, therapy and
-                            consultation services in Africa and beyond.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mission and vision ends here  -->
 
-        <!-- SERVICE APPROACH STARTS HERE -->
-        <section class="wrapper bg-light upper-end">
-            <div class="container pb-14 pb-md-16">
-                <!--/.row -->
-                <h3 class="display-5 pb-5 pb-md-4">Our Service Approach</h3>
-                <div class="row gx-lg-8 gx-xl-12 gy-6 process-wrapper line">
-                    <div class="col-md-6 col-lg-3">
-                        <span class="icon btn btn-circle btn-lg btn-danger disabled mb-4">
-                            <span class="number">a</span>
-                        </span>
-                        <h4 class="mb-1">Evidence Focused</h4>
-                        <p>We are attentive to our client's improvement and feedback.</p>
 
-                        <div class="mt-12 mt-md-12">
-                            <span class="icon btn btn-circle btn-lg btn-primary disabled mb-4">
-                                <span class="number">b</span>
-                            </span>
-                            <h4 class="mb-1">Convenience</h4>
-                            <p>Almost everything ranging from shopping to business is conveniently delivered these days.
-                                Why not therapy, coaching, training, and other mental health services?</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <span class="icon btn btn-circle btn-lg btn-warning disabled mb-4">
-                            <span class="number">c</span>
-                        </span>
-                        <h4 class="mb-1">Personalized Profiling</h4>
-                        <p>We understand that therapy without clinical and psychological assessment is short-lived.
-                            Therefore, in between mind clinics, a psychological assessment precedes our services.</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <span class="icon btn btn-circle btn-lg btn-dark disabled mb-4">
-                            <span class="number">d</span>
-                        </span>
-                        <h4 class="mb-1">Relaxing and Friendly</h4>
-                        <p>We believe that clients live to regret and not heal when the service offered is rigid and
-                            guilt-trapped. Being too professional without a touch of friendliness is not therapy. We
-                            believe everyone deserves to be heard and to also live their best life. There is a plan for
-                            everyone.</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <span class="icon btn btn-circle btn-lg btn-purple disabled mb-4">
-                            <span class="number">e</span>
-                        </span>
-                        <h4 class="mb-1">Team Work</h4>
-                        <p>Individually, we do not know and teamwork makes a dream work. So each team member sticks to
-                            their areas of specialization.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- SERVICE APPROACH ENDS HERE -->
     </div>
     <?php 
             include(ROOT_PATH . "/includes/footer.php"); 
