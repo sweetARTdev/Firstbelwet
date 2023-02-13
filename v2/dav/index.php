@@ -1,68 +1,20 @@
+<?php
+    include('path.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="img/logo.png">
-	<title>Belwet Mind Clinic</title>
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/theme/blue.css">
+    <title>Belwet Mind Clinic</title>
+    <?php include(ROOT_PATH . "/includes/head.php"); ?>
 </head>
 <body>
 	<div class="content-wrapper">
 		<!-- header section starts here -->
-		<header class="wrapper bg-soft-primary">
-			<nav class="navbar center-nav position-absolute navbar-expand-lg navbar-dark primarycolorbg">
-				<div class="container flex-lg-row flex-nowrap align-items-center">
-					<div class="navbar-brand w-100">
-							<a href="index.html">
-								<img class="logo-dark" height="50px" src="img/logo.png" alt="" />
-								<img class="logo-light" height="50px" src="img/logo.png" alt="" />
-							</a>
-					</div>
-					<div class="navbar-collapse offcanvas-nav">
-						<div class="offcanvas-header d-lg-none d-xl-none">							
-							<button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-nav-close" aria-label="Close"></button>
-						</div>
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link active" href="index.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="about-us.html">About Us</a>
-							</li>
-							<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">Services</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="dropdown-item" href="services.html">Therapy</a></li>
-									<li class="nav-item"><a class="dropdown-item" href="coaching.html">Coaching</a></li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="reviews.html">Reviews</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="library.html">Library</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="contact-us.html">Contact Us</a>
-							</li>
-						</ul>						
-					</div>					
-					<div class="navbar-other w-100 d-flex ms-auto">
-						<ul class="navbar-nav flex-row align-items-center ms-auto" data-sm-skip="true">
-							<li class="nav-item d-lg-none">
-								<div class="navbar-hamburger">
-									<button class="hamburger animate plain" data-toggle="offcanvas-nav">
-										<span></span>
-									</button>
-								</div>
-							</li>
-						</ul>						
-					</div>					
-				</div>				
-			</nav>						
-		</header>
+		<?php 
+            $page = "index";
+            include(ROOT_PATH . "/includes/header.php"); 
+        ?>
 		<!-- header section ends here -->
 		
 		<!-- Hero section starts here -->
@@ -145,27 +97,9 @@
 	</div>
 
 	<!-- Footer starts here -->
-	<footer class="bg-dark text-inverse">
-		<div class="container py-4 py-md-4">
-			<div class="row gy-6 gy-lg-0">
-				<div class="col-lg-12 text-center">
-					<div class="widget ">
-						<img class="mb-4" src="img/logo.png" height="80px" alt="" />
-						<p class="mb-4">© 2023 Belwet Mind Clinic. All rights reserved.</p>
-						<!-- <nav class="nav social social-white text-center">
-							<a href="#"><i class="uil uil-twitter"></i></a>
-							<a href="#"><i class="uil uil-facebook-f"></i></a>
-							<a href="#"><i class="uil uil-instagram"></i></a>
-							<a href="#"><i class="uil uil-youtube"></i></a>
-						</nav> -->
-					</div>
-					<!-- /.widget -->
-				</div>								
-			</div>
-			<!--/.row -->
-		</div>
-		<!-- /.container -->
-	</footer>
+	<?php 
+            include(ROOT_PATH . "/includes/footer.php"); 
+        ?>
 	<!-- Footer ends here -->
 	<div class="progress-wrap">
 		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
