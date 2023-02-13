@@ -13,25 +13,26 @@
                             </div>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link " href="index">Home</a>
+                                    <a class="nav-link <?php if ($page == 'index') { echo 'active'; } ?> " href="index">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="about-us">About Us</a>
+                                    <a class="nav-link <?php if ($page == 'about') { echo 'active'; } ?>" href="about-us">About Us</a>
                                 </li>
-                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">Services</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link <?php if ($page == 'services') { echo 'active'; } ?> dropdown-toggle" href="#!">Services</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a class="dropdown-item" href="therapy">Therapy</a></li>
                                         <li class="nav-item"><a class="dropdown-item" href="coaching">Coaching</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="reviews">Reviews</a>
+                                    <a class="nav-link <?php if ($page == 'reviews') { echo 'active'; } ?>" href="reviews">Reviews</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="library">Library</a>
+                                    <a class="nav-link <?php if ($page == 'library') { echo 'active'; } ?>" href="library">Library</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact-us">Contact Us</a>
+                                    <a class="nav-link <?php if ($page == 'contact') { echo 'active'; } ?>" href="contact-us">Contact Us</a>
                                 </li>
                             
                             </ul>
