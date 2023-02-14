@@ -38,7 +38,7 @@
                         <div class="card shadow-lg">
                             <div class="row gx-0">
                                 <div class="col-lg-6 image-wrapper bg-image bg-cover rounded-top rounded-lg-start d-none d-md-block"
-                                    data-image-src="img/Services.avif">
+                                    data-image-src="img/principles.jpg">
                                 </div>
                                 <!--/column -->
                                 <div class="col-lg-6">
