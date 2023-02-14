@@ -166,17 +166,7 @@
                                 <!-- /form -->
                             </div>
                             <!--/column -->
-                            <div class="col-lg-4">
-                                <!-- <div class="d-flex flex-row">
-                                    <div>
-                                        <div class="icon text-primary fs-28 me-4 mt-n1"> <i
-                                                class="uil uil-location-pin-alt"></i> </div>
-                                    </div>
-                                    <div>
-                                        <h5 class="mb-1">Address</h5>
-                                        <address>Moonshine St. 14/05 Light City, London, United Kingdom</address>
-                                    </div>
-                                </div> -->
+                            <div class="col-lg-4">                               
                                 <div class="d-flex flex-row">
                                     <div>
                                         <div class="icon text-primary fs-28 me-4 mt-n1"> <i
@@ -226,11 +216,6 @@
             </div>
             <!-- /.container -->
         </section>
-
-
-
-
-
 
     </div>
     <?php 
