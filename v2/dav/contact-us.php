@@ -119,20 +119,19 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
-                                                    <input id="phone" type="text" name="phone" class="form-control"
-                                                        placeholder="Phone number" required="required">
-                                                    <label for="phone">Phone Number*</label>
+                                                    <input id="gender" type="text" name="gender" class="form-control"
+                                                        placeholder="Gender" required="required">
+                                                    <label for="gender">Date of birth*</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
-                                                    <input id="form_email" type="email" name="email"
-                                                        class="form-control" placeholder="jane.doe@example.com"
-                                                        required="required" data-error="Valid email is required.">
-                                                    <label for="form_email">Email *</label>
-                                                    <div class="help-block with-errors"></div>
+                                                    <input id="gender" type="text" name="gender" class="form-control"
+                                                        placeholder="Gender" required="required">
+                                                    <label for="gender">Profession*</label>
                                                 </div>
                                             </div>
+                                            
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
                                                     <input id="form_phone" type="tel" name="phone" class="form-control"
@@ -147,7 +146,7 @@
                                                     <textarea id="form_message" name="message" class="form-control"
                                                         placeholder="Your message" rows="5" required="required"
                                                         data-error="Message is required."></textarea>
-                                                    <label for="form_message">Message *</label>
+                                                    <label for="form_message">Reason for request *</label>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
@@ -212,7 +211,11 @@
                                         <h5 class="mb-1">Working Hours</h5>
                                         <p>Monday to Friday – 11:00 am to 10:00 pm <br>
                                             Saturday to Sunday – Emergencies only with an extra fee of N5000.
+                                            <stong>Temporarily, physical services are provided only in Kaduna. 
+                                            There is a provision for physical services in other locations to clients 
+                                            who make a request and also meet the terms and conditions.</strong>
                                         </p>
+                                        
                                     </div>
                                 </div>
                             </div>
