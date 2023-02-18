@@ -98,22 +98,19 @@
                                         <div class="row gx-4">
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
-                                                    <input id="form_name" type="text" name="name" class="form-control"
-                                                        placeholder="Full name" required="required">
+                                                    <input id="form_name" type="text" name="fullname"
+                                                        class="form-control" placeholder="Full name" required>
                                                     <label for="form_name">Name *</label>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
-                                                    <select class="form-control" name="" id="gender" required>
+                                                    <select class="form-control" name="gender" id="gender" required>
                                                         <option value="">--- Select Gender </option>
                                                         <option value="male">Male</option>
                                                         <option value="female">Female</option>
                                                     </select>
-                                                    <!-- <input id="gender" type="text" name="gender" class="form-control"
-                                                        placeholder="Gender" required> -->
-                                                    <!-- <label for="gender">Gender*</label> -->
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
@@ -127,7 +124,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
-                                                    <input id="gender" type="date" name="gender" class="form-control"
+                                                    <input id="gender" type="date" name="dob" class="form-control"
                                                         placeholder="Gender" required>
                                                     <label for="gender">Date of birth*</label>
                                                     <div class="help-block with-errors"></div>
@@ -135,8 +132,8 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
-                                                    <input id="gender" type="text" name="gender" class="form-control"
-                                                        placeholder="Gender" required>
+                                                    <input id="gender" type="text" name="profession"
+                                                        class="form-control" placeholder="Gender" required>
                                                     <label for="gender">Profession*</label>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -144,8 +141,8 @@
 
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
-                                                    <input id="form_phone" type="tel" name="phone" class="form-control"
-                                                        placeholder="Your phone number">
+                                                    <input id="form_phone" type="tel" name="phone" required
+                                                        class="form-control" placeholder="Your phone number">
                                                     <label for="form_phone">Phone*</label>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -154,7 +151,7 @@
                                             <div class="col-12">
                                                 <div class="form-label-group mb-4">
                                                     <textarea id="form_message" name="message" class="form-control"
-                                                        placeholder="Your message" rows="5" required="required"
+                                                        placeholder="Your message" rows="5" required
                                                         data-error="Message is required."></textarea>
                                                     <label for="form_message">Reason for request *</label>
                                                     <div class="help-block with-errors"></div>
@@ -257,16 +254,21 @@
                     $("#contactFormbtn").val("Please wait")
 
                     $.ajax({
-                        url:"server.php",
-                        method:"post",
-                        data:$("#contactForm").serialize()+ "&action=submitContact",
-                        beforeSend:function(){
-                            $("#contactFormbtn").attr("disabled","disabled");
-                            $("#contactForm").css("opacity","0.5");
+                        url: "server.php",
+                        method: "post",
+                        data: $("#contactForm").serialize() + "&action=submitContact",
+                        beforeSend: function () {
+                            $("#contactFormbtn").attr("disabled", "disabled");
+                            $("#contactForm").css("opacity", "0.5");
                         },
-                        success:function(response){
-                            console.log(response)
-                            
+                        success: function (response) {
+                            if (response === "success") {
+                                console.log("You have submitted it successfully ")
+                            } else if (response === "error") {
+                                console.log("There are some fields that are empty ")
+                            } else {
+                                console.log("Something is currently wrong with our server")
+                            }
                         }
                     })
                 }
