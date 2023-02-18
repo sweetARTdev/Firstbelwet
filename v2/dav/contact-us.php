@@ -101,42 +101,47 @@
                                                     <input id="form_name" type="text" name="name" class="form-control"
                                                         placeholder="Full name" required="required">
                                                     <label for="form_name">Name *</label>
+                                                    <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
                                                     <input id="gender" type="text" name="gender" class="form-control"
-                                                        placeholder="Gender" required="required">
+                                                        placeholder="Gender" required>
                                                     <label for="gender">Gender*</label>
+                                                    <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
                                                     <input id="email" type="text" name="email" class="form-control"
-                                                        placeholder="Email" required="required">
+                                                        placeholder="Email" required>
                                                     <label for="email">Email*</label>
+                                                    <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
                                                     <input id="gender" type="text" name="gender" class="form-control"
-                                                        placeholder="Gender" required="required">
+                                                        placeholder="Gender" required>
                                                     <label for="gender">Date of birth*</label>
+                                                    <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
                                                     <input id="gender" type="text" name="gender" class="form-control"
-                                                        placeholder="Gender" required="required">
+                                                        placeholder="Gender" required>
                                                     <label for="gender">Profession*</label>
+                                                    <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
                                                     <input id="form_phone" type="tel" name="phone" class="form-control"
                                                         placeholder="Your phone number">
-                                                    <label for="form_phone">Phone</label>
+                                                    <label for="form_phone">Phone*</label>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
@@ -152,9 +157,10 @@
                                             </div>
                                             <!-- /column -->
                                             <div class="col-12">
-                                                <input id="contactFormbtn"  type="submit" class="btn btn-primary rounded-pill btn-send mb-3"
+                                                <input id="contactFormbtn" type="submit"
+                                                    class="btn btn-primary rounded-pill btn-send mb-3"
                                                     value="Send message">
-                                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+
                                             </div>
                                             <!-- /column -->
                                         </div>
@@ -165,7 +171,7 @@
                                 <!-- /form -->
                             </div>
                             <!--/column -->
-                            <div class="col-lg-4">                               
+                            <div class="col-lg-4">
                                 <div class="d-flex flex-row">
                                     <div>
                                         <div class="icon text-primary fs-28 me-4 mt-n1"> <i
@@ -201,11 +207,11 @@
                                         <h5 class="mb-1">Working Hours</h5>
                                         <p>Monday to Friday – 11:00 am to 10:00 pm <br>
                                             Saturday to Sunday – Emergencies only with an extra fee of N5000.
-                                            <stong>Temporarily, physical services are provided only in Kaduna. 
-                                            There is a provision for physical services in other locations to clients 
-                                            who make a request and also meet the terms and conditions.</strong>
+                                            <stong>Temporarily, physical services are provided only in Kaduna.
+                                                There is a provision for physical services in other locations to clients
+                                                who make a request and also meet the terms and conditions.</strong>
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -239,15 +245,15 @@
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
     <script>
-        $(function(){
-            $("#contactFormbtn").click(function(event){
-                if ($("#contactForm")[0].checkValidity()){
-                    event.preventDefault()
-                    $("#contactFormbtn").val("Please wait") 
+        $(function () {
+            $("#contactFormbtn").click(function (e) {
+                if ($("#contactForm")[0].checkValidity()) {
+                    e.preventDefault();
+                    $("#contactFormbtn").val("Please wait")
                 }
-                
-                
-                
+
+
+
             })
         })
     </script>
