@@ -1,11 +1,9 @@
 <?php 
 
-class CheckMail{
+class Checkmail{
 
-// new mail function 
-        public function mailFunction($to, $title, $note, $link, $btnText, $user = 'User'){
-            $subject = $title;
-            $headers = "From: Philawaju" . "\r\n";
+        public function mailFunction($fullname, $gender, $email, $dob, $profession, $phone, $message){            
+            $headers = "From: BelWet Mind" . "\r\n";
             $message = '
             
             <!doctype html>
@@ -13,7 +11,7 @@ class CheckMail{
               <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-                <title>'.$subject.'</title>
+                <title>Contact Enquiry</title>
                 <style>
             @media only screen and (max-width: 620px) {
               table.body h1 {
@@ -119,27 +117,17 @@ class CheckMail{
                               <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
                                 <tr style="color:#fff">
                                   <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
-                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Dear '.$user.',</p>
-                                    <p style="font-family: sans-serif; font-size: 20px; font-weight: normal; margin: 0; margin-bottom: 15px;">'.$title.'</p>
-                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">'.$note.'</p>
-                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: border-box; width: 100%;" width="100%">
-                                      <tbody>
-                                        <tr>
-                                          <td align="left" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;" valign="top">
-                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;">
-                                              <tbody>
-                                                <tr>
-                                                    <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 5px; text-align: center; background-color: #111;" valign="top" align="center" bgcolor="#3498db"> 
-                                                        <a href="'.$link.'" target="_blank" style="border: solid 1px #111; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-decoration: none; text-transform: capitalize; background-color: #111; border-color: #111; color: #ffffff;">'.$btnText.'</a> 
-                                                    </td>                                                   
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>                                    
-                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Regards<br/> <span style="font-weight:bold">Philawaju </p>
+                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Dear Admin,</p>
+                                    
+                                    <p style="font-family: sans-serif; font-size: 20px; font-weight: normal; margin: 0; margin-bottom: 15px;">Kindly fiind the details of the contact us Enquiry </p>
+                                    <p style="font-family: sans-serif; font-size: 20px; font-weight: normal; margin: 0; margin-bottom: 15px;">Fullname: '.$fullname.'</p>
+                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Gender: '.$gender.'</p>
+                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Email: '.$email.'</p>
+                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Date of Birth: '.$dob.'</p>
+                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Profession: '.$profession.'</p>
+                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Phone: '.$phone.'</p>
+                                    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Message: '.$message.'</p>
+                                    
                                   </td>
                                 </tr>
                               </table>
@@ -147,25 +135,9 @@ class CheckMail{
                           </tr>
             
                         </table>
-                                    
-                        <div class="footer" style="clear: both; margin-top: 10px; text-align: center; width: 100%;">
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
-                            <tr>
-                              <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; color: #999999; font-size: 12px; text-align: center;" valign="top" align="center">
-                                <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">5515 Chester Avenue, Philadelphia, PA 19143</span>                                
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="content-block powered-by" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; color: #999999; font-size: 12px; text-align: center;" valign="top" align="center">
-                                Any inquiry? <a href="http://philawaju.com/contact" style="color: #999999; font-size: 12px; text-align: center; text-decoration: none;">Contact us</a>.
-                              </td>
-                            </tr>
-                          </table>
-                        </div>                        
-            
+                         
                       </div>
                     </td>
-                    <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
                   </tr>
                 </table>
               </body>
@@ -178,7 +150,8 @@ class CheckMail{
             // More headers
             $headers .= 'From: <info@philawaju.org>' . "\r\n";
 
-            mail($to,$subject,$message,$headers);
+            // mail('belwetmindclinic@gmail.com', $subject, $message, $headers);
+            mail('dadewale@gmail.com', "Contact Enquiry Form", $message, $headers);
 
 
         }

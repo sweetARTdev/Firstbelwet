@@ -133,7 +133,7 @@
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
                                                     <input id="gender" type="text" name="profession"
-                                                        class="form-control" placeholder="Gender" required>
+                                                        class="form-control" placeholder="Profession" required>
                                                     <label for="gender">Profession*</label>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -267,7 +267,7 @@
                             } else if (response === "error") {
                                 console.log("There are some fields that are empty ")
                             } else {
-                                console.log("Something is currently wrong with our server")
+                                console.log(response)
                             }
                         }
                     })
