@@ -257,7 +257,17 @@
                     $("#contactFormbtn").val("Please wait")
 
                     $.ajax({
-
+                        url:"server.php",
+                        method:"post",
+                        data:$("#contactForm").serialize()+ "&action=submitContact",
+                        beforeSend:function(){
+                            $("#contactFormbtn").attr("disabled","disabled");
+                            $("#contactForm").css("opacity","0.5");
+                        },
+                        success:function(response){
+                            console.log(response)
+                            
+                        }
                     })
                 }
 
