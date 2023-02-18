@@ -106,9 +106,14 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
-                                                    <input id="gender" type="text" name="gender" class="form-control"
-                                                        placeholder="Gender" required>
-                                                    <label for="gender">Gender*</label>
+                                                    <select class="form-control" name="" id="gender" required>
+                                                        <option value="">--- Select Gender </option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                    </select>
+                                                    <!-- <input id="gender" type="text" name="gender" class="form-control"
+                                                        placeholder="Gender" required> -->
+                                                    <!-- <label for="gender">Gender*</label> -->
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
@@ -122,7 +127,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-label-group mb-4">
-                                                    <input id="gender" type="text" name="gender" class="form-control"
+                                                    <input id="gender" type="date" name="gender" class="form-control"
                                                         placeholder="Gender" required>
                                                     <label for="gender">Date of birth*</label>
                                                     <div class="help-block with-errors"></div>
@@ -250,6 +255,10 @@
                 if ($("#contactForm")[0].checkValidity()) {
                     e.preventDefault();
                     $("#contactFormbtn").val("Please wait")
+
+                    $.ajax({
+
+                    })
                 }
 
 
