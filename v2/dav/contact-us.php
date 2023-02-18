@@ -92,7 +92,7 @@
                     <div class="col-xl-10 mx-auto">
                         <div class="row gy-10 gx-lg-8 gx-xl-12">
                             <div class="col-lg-8">
-                                <form class="contact-form" method="post" action="">
+                                <form id="contactForm" class="contact-form" method="post">
                                     <div class="messages"></div>
                                     <div class="controls">
                                         <div class="row gx-4">
@@ -152,7 +152,7 @@
                                             </div>
                                             <!-- /column -->
                                             <div class="col-12">
-                                                <input type="submit" class="btn btn-primary rounded-pill btn-send mb-3"
+                                                <input id="contactFormbtn"  type="submit" class="btn btn-primary rounded-pill btn-send mb-3"
                                                     value="Send message">
                                                 <p class="text-muted"><strong>*</strong> These fields are required.</p>
                                             </div>
@@ -238,6 +238,19 @@
         crossorigin="anonymous"></script>
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        $(function(){
+            $("#contactFormbtn").click(function(event){
+                if ($("#contactForm")[0].checkValidity()){
+                    event.preventDefault()
+                    $("#contactFormbtn").val("Please wait") 
+                }
+                
+                
+                
+            })
+        })
+    </script>
 </body>
 
 </html>
