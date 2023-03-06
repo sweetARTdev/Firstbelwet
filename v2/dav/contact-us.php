@@ -223,28 +223,7 @@
                 </div>
                 <!-- /.row --> 
             </div>
-            <div class="col-md-3 col-lg-6"> 
-               <a href="https://www.facebook.com/belwetmindclinic/"><button class=" btn-circle btn-lg btn-primary disabled mb-4">
-                    <span class="number">Facebook</span>
-                </button> 
-            </a>
-            <a href="https://www.instagram.com/belwetmindclinic/"><button class=" btn-circle btn-lg btn-purple disabled mb-4">
-                    <span class="number">Instagram</span>
-                </button>
-            </a>   
-            <a href="https://www.youtube.com/@abigailolasehinde"><button class=" btn-circle btn-lg btn-danger disabled mb-4">
-                    <span class="number">Youtube</span>
-                </button>
-            </a>
-            <a href="https://www.linkedin.com/in/abigail-olasehinde-psychologist-therapist-nlp-master"><button class=" btn-circle btn-lg btn-primary disabled mb-4">
-                    <span class="number">LinkedIn</span>
-                </button>
-            </a>
-            <a href="https://t.me/MindClinicWithAbigail"><button class=" btn-circle btn-lg btn-purple disabled mb-4">
-                    <span class="number">Telegram</span>
-                </button>
-            </a>
-            </div>
+
             <!-- /.container -->
         </section>
         
@@ -265,6 +244,7 @@
         crossorigin="anonymous"></script>
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
         $(function () {
             $("#contactFormbtn").click(function (e) {
@@ -282,11 +262,34 @@
                         },
                         success: function (response) {
                             if (response === "success") {
-                                console.log("You have submitted it successfully ")
+                                Swal.fire({
+                                    icon:"success",
+                                    title:"Submitted",
+                                    text:"contact enquiry submitted successfully"
+                                })
+                                $("#contactFormbtn").removeAttr("disabled");
+                                $("#contactForm").css("opacity", "");
+                                $("#contactForm")[0].reset();
+                                // console.log("You have submitted it successfully ")
                             } else if (response === "error") {
-                                console.log("There are some fields that are empty ")
+                                Swal.fire({
+                                    icon:"warning",
+                                    title:"Warning",
+                                    text:"Some fields are empty"
+                                })
+                                $("#contactFormbtn").removeAttr("disabled");
+                                $("#contactForm").css("opacity", "");
+                                // $("#contactForm")[0].reset();
+                                // console.log("There are some fields that are empty ")
                             } else {
-                                console.log(response)
+                                Swal.fire({
+                                    icon:"error",
+                                    title:"Error",
+                                    text:"Something went wrong on our server"
+                                })
+                                $("#contactFormbtn").removeAttr("disabled");
+                                $("#contactForm").css("opacity","");
+                                // console.log(response)
                             }
                         }
                     })
