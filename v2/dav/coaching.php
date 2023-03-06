@@ -115,7 +115,7 @@
                                     </span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-primarycolorbg rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-primarycolorbg rounded-pill">Book Now</a>
                         </div>
                     </div>
                 </div>

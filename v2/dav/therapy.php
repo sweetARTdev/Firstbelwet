@@ -52,7 +52,7 @@
                                 The following are available therapy, counselling and coaching services
                             </p>
                         </div>
-                        <a href="contact-us" class="btn btn-primarycolorbg rounded-pill">Book Now</a>
+                        <a href="#booktherapy" class="btn btn-primarycolorbg rounded-pill">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
         <!-- THERAPY AND COUNSELLING ends here  -->
 
         <!-- services and book now btn starts  here  -->
-        <section class="wrapper bg-light upper-end">
+        <section class="wrapper bg-light upper-end"  id="booktherapy">
             <div class="container pb-14 pb-md-16">
                 <!--/.row -->
                 <h3 class="display-5 pb-12 pb-md-12">Available therapy, counselling & coaching services</h3>
@@ -96,10 +96,10 @@
                                 <li>
                                     <i class="uil uil-check"></i>
                                     <span> Six weeks (12 sessions) + comprehensive and clinical assessment --
-                                        <strong>0,000</strong></span>
+                                        <strong>145,000</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-danger rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-danger rounded-pill">Book Now</a>
                         </div>
                     </div>
 
@@ -130,7 +130,7 @@
                                         <strong>N60,000</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-warning rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-warning rounded-pill">Book Now</a>
                         </div>
                     </div>
 
@@ -156,7 +156,7 @@
                                         <strong>N30,000</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-primary rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-primary rounded-pill">Book Now</a>
                         </div>
                     </div>
 
@@ -178,7 +178,7 @@
                                     <span> Consultation and therapy (1hour) -- <strong>N10,000</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-primarycolorbg rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-primarycolorbg rounded-pill">Book Now</a>
                         </div>
                     </div>
 
@@ -203,7 +203,7 @@
                                         hour) -- <strong>N15,000</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-purple rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-purple rounded-pill">Book Now</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6">
@@ -235,7 +235,7 @@
                                         <strong>N93,000</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-info rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-info rounded-pill">Book Now</a>
                         </div>
                     </div>
 
@@ -267,7 +267,7 @@
                                         <strong>N72,500</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-secondary rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-secondary rounded-pill">Book Now</a>
                         </div>
                     </div>
 
@@ -294,7 +294,7 @@
                                     <span>(8 and above) N75,000 per hour-- <strong>N75,000</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-warning rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-warning rounded-pill">Book Now</a>
                         </div>
                     </div>
 
@@ -330,7 +330,7 @@
                                         <strong>N148,500</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-danger rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-danger rounded-pill">Book Now</a>
                         </div>
                     </div>
 
@@ -359,7 +359,7 @@
                                         <strong>N60,000</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-primarycolorbg rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-primarycolorbg rounded-pill">Book Now</a>
                         </div>
                     </div>
 
@@ -384,7 +384,7 @@
                                         afterwards</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-primary rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-primary rounded-pill">Book Now</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6">
@@ -402,7 +402,7 @@
                                     <span> Consultation and registration fee -- <strong>N10,000</strong></span>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-purple rounded-pill">Book Now</a>
+                            <a href="contact-us" class="btn btn-purple rounded-pill">Book Now</a>
                         </div>
                     </div>
                 </div>

@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <!-- /.row -->
-                <div class="row">
+                <div class="row" id="formcontact">
                     <div class="col-xl-10 mx-auto">
                         <div class="row gy-10 gx-lg-8 gx-xl-12">
                             <div class="col-lg-8">
@@ -213,17 +213,7 @@
 
                                     </div>
                                 </div>
-                                <div class="d-flex flex-row">
-                                    <div>
-                                        <div class="icon text-primary fs-28 me-4 mt-n1"> <i
-                                                class="uil uil-faceboook-f"></i> </div>
-                                    </div>
-                                    <div>
-                                        
-                                        <p class=""><a href="mailto:abigail.olasehinde@belwetmindclinic.com"
-                                                class="link-body">Facebook</a></p>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <!--/column -->
                         </div>
@@ -233,10 +223,31 @@
                 </div>
                 <!-- /.row --> 
             </div>
+            <div class="col-md-3 col-lg-6"> 
+               <a href="https://www.facebook.com/belwetmindclinic/"><button class=" btn-circle btn-lg btn-primary disabled mb-4">
+                    <span class="number">Facebook</span>
+                </button> 
+            </a>
+            <a href="https://www.instagram.com/belwetmindclinic/"><button class=" btn-circle btn-lg btn-purple disabled mb-4">
+                    <span class="number">Instagram</span>
+                </button>
+            </a>   
+            <a href="https://www.youtube.com/@abigailolasehinde"><button class=" btn-circle btn-lg btn-danger disabled mb-4">
+                    <span class="number">Youtube</span>
+                </button>
+            </a>
+            <a href="https://www.linkedin.com/in/abigail-olasehinde-psychologist-therapist-nlp-master"><button class=" btn-circle btn-lg btn-primary disabled mb-4">
+                    <span class="number">LinkedIn</span>
+                </button>
+            </a>
+            <a href="https://t.me/MindClinicWithAbigail"><button class=" btn-circle btn-lg btn-purple disabled mb-4">
+                    <span class="number">Telegram</span>
+                </button>
+            </a>
+            </div>
             <!-- /.container -->
         </section>
-        <a style="color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f fa-lg"></i></a>
-    </div>
+        
     <?php 
             include(ROOT_PATH . "/includes/footer.php"); 
         ?>
