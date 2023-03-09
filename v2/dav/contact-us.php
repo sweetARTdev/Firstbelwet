@@ -33,14 +33,14 @@
 
         <section class="wrapper bg-light">
             <div class="container pb-14 pb-md-16">
-                <div class="row">
-                    <div class="col mt-n19 mb-16">
+               <!--  <div class="row">
+                   <div class="col mt-n19 mb-16">
                         <div class="card shadow-lg">
                             <div class="row gx-0">
                                 <div class="col-lg-6 image-wrapper bg-image bg-cover rounded-top rounded-lg-start d-none d-md-block"
                                     data-image-src="img/principles.jpg">
                                 </div>
-                                <!--/column -->
+                                <--/column ->
                                 <div class="col-lg-6">
                                     <div class="p-10 p-md-11 p-lg-13">
                                         <h2 class="display-4 mb-3">Our Principles</h2>
@@ -67,24 +67,16 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 
                 <div class="pb-7 pb-md-8">
                     <div class="container">
-                        <p class=" mx-12 mx-md-14"> Temporarily, physical services are provided only in Kaduna. There
-                            is
-                            a provision for
-                            physical
-                            services in other locations to clients who make a request and also meet the terms and
-                            conditions.
-                        </p>
-                        <p class=" mx-12 mx-md-14">Got questions, comments, or feedback? And If you are trying to
-                            schedule an appointment you
-                            can do
-                            so by directly browsing through our service list. But if you don’t find what you are looking
-                            for, you can tell us by filling out the contact form. We are here for you.
-                        </p>
                     </div>
+                    <p class=" mx-12 mx-md-14">Got questions, comments, or feedback? And If you are trying to
+                        schedule an appointment you can do so by directly browsing through our service list. 
+                        But if you don’t find what you are looking
+                        for, you can tell us by filling out the contact form. We are here for you.
+                    </p>
                 </div>
                 <!-- /.row -->
                 <div class="row" id="formcontact">
@@ -221,9 +213,13 @@
                     </div>
                     <!-- /column -->
                 </div>
-                <!-- /.row --> 
+                <!-- /.row -->
+                <p class=" mx-12 mx-md-14"> Temporarily, physical services are provided only in Kaduna. There
+                    is a provision for physical services in other locations to clients who make a request and also meet the terms and
+                    conditions.
+                </p> 
             </div>
-
+            
             <!-- /.container -->
         </section>
         

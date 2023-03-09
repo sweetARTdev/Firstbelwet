@@ -52,7 +52,7 @@
                                 The following are available therapy, counselling and coaching services
                             </p>
                         </div>
-                        <a href="#booktherapy" class="btn btn-primarycolorbg rounded-pill">Book Now</a>
+                        
                     </div>
                 </div>
             </div>

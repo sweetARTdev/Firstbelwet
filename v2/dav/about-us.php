@@ -147,6 +147,51 @@
                 </div>
             </section>
              <!-- SERVICE APPROACH ENDS HERE -->
+
+              <!-- Our Principles STARTS HERE -->
+            <section class="wrapper bg-light upper-end">
+                <div class="container pb-14 pb-md-16">
+                    <!--/.row -->
+                    <h3 class="display-5 pb-5 pb-md-4">Our Principles</h3>
+                    <div class="row gx-lg-8 gx-xl-12 gy-6 process-wrapper line">
+                        <div class="col-md-6 col-lg-3"> 
+                            <span class="icon btn btn-circle btn-lg btn-danger disabled mb-4">
+                                <span class="number">a</span>
+                            </span>
+                            <h4 class="mb-1">Enlighten</h4>
+                            <p>We provide updated and valuable information on mental health, psychological
+                                well-being, and how to overcome your weaknesses and maximize your strength.</p>
+                        </div>               
+                        <div class="col-md-6 col-lg-3">
+                            <span class="icon btn btn-circle btn-lg btn-primary disabled mb-4">
+                                <span class="number">b</span>
+                            </span>
+                            <h4 class="mb-1">Communicate</h4>
+                            <p>Without honest communication we can not know your request nor can we proffer
+                                the right and long-lasting solutions. We understand the importance of verbal
+                                (7%), tone (38%) and body language (55%).</p>
+                        </div>         
+                        <div class="col-md-6 col-lg-3"> 
+                            <span class="icon btn btn-circle btn-lg btn-warning disabled mb-4">
+                                <span class="number">c</span>
+                            </span>
+                            <h4 class="mb-1">Connect</h4>
+                            <p>We connect you to a verified specialist based on your unique profile and
+                                request.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3"> 
+                            <span class="icon btn btn-circle btn-lg btn-dark disabled mb-4">
+                                <span class="number">d</span>
+                            </span>
+                            <h4 class="mb-1">Explore</h4>
+                            <p>We explore by researching various mental health topics as it concerns
+                                different races, cultures and age groups.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+             <!-- SERVICE APPROACH ENDS HERE -->
         </div>
         <?php 
             include(ROOT_PATH . "/includes/footer.php"); 
